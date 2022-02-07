@@ -29,7 +29,7 @@ const Hero = () => {
     return(
         <View style={styles.bannerContainer}>
             <Link to='/activate'>
-                <Image source={require('../images/Hero.webp')} style={styles.heroStyle} resizeMode="stretch"/>
+                <Image source={require('../images/Hero.webp')} style={styles.heroStyle} resizeMode='stretch'/>
             </Link>
         </View>
     )
