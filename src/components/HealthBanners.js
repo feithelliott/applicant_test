@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
 const HealthBanners = () => {
     const [banners] = useState(HPBanners);
     
-    const bannerArray = HPBanners.map(banner => (
+    const bannerArray = banners.map(banner => (
         <View style={styles.container}>
             <Link to={`/product${banner.id}`}>
             <Image source={(require(`../images/${banner.photo}`))} style={styles.imageStyle} resizeMode='contain'/>
