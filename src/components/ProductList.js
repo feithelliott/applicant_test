@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React, { useState } from 'react';
 import { 
     Image,
     StyleSheet,
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     },
     titleText: {
         fontSize: '1.5vh',
-        fontWeight: "bold"
+        fontWeight: 'bold'
     },
     buttonText: {
         textAlign: 'center',
@@ -56,17 +56,17 @@ const ProductList = () => {
     const [products] = useState(dummyProducts);
     const cardsArray = products.map(product => (
         <View style={styles.container}>
-          <Image source={(require(`../images/${product.photo}`))} style={styles.imageStyle} resizeMode="contain"/>
+          <Image source={(require(`../images/${product.photo}`))} style={styles.imageStyle} resizeMode='contain'/>
           <StarRating
             rating={product.rating}
-            starRatedColor="red"
+            starRatedColor='red'
             numberOfStarts={5}
-            name="rating"
-            starDimension="10px"
-            starSpacing="5px"/>
+            name='rating'
+            starDimension='10px'
+            starSpacing='5px'/>
           <Text style={styles.titleText}>{product.name}</Text>
           <Text>{product.description}</Text>
-          <Text style={(product.buyOneGetOne == true) ? styles.buyOneGetOnePrice : styles.price}>{product.price}</Text>
+          <Text style={(product.buyOneGetOne === true) ? styles.buyOneGetOnePrice : styles.price}>{product.price}</Text>
           <View>
             <TouchableOpacity style={styles.button} > 
                 <Text style={styles.buttonText}>add to cart</Text>

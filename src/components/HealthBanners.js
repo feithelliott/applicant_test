@@ -26,7 +26,7 @@ const HealthBanners = () => {
     const bannerArray = HPBanners.map(banner => (
         <View style={styles.container}>
             <Link to={`/product${banner.id}`}>
-            <Image source={(require(`../images/${banner.photo}`))} style={styles.imageStyle} resizeMode="contain"/>
+            <Image source={(require(`../images/${banner.photo}`))} style={styles.imageStyle} resizeMode='contain'/>
           </Link>
         </View>
     ));

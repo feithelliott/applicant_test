@@ -1,4 +1,3 @@
-import Hero from '../src/components/Hero';
 import Activate from './pages/Activation';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
